@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote Now</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f8f9fa;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            border: 3px solid #e9ecef;
+        }
+
+        h1 {
+            color: #495057;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 20px 0 8px;
+            font-weight: 600;
+            color: #343a40;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px 30px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 20px;
+                padding: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗳️ Online Captains Voting</h1>
+        <form action="/client/submit_vote" method="POST">
+            <label for="voter_id">Voter ID:</label>
+            <input type="text" id="voter_id" name="voter_id" required>
+
+            <label for="candidate">Select Candidate:</label>
+            <select id="candidate" name="candidate" required>
+               <option value="" disabled selected hidden>select</option>
+                <option value="Naveen">Naveen</option>
+                <option value="Pranav">Pranav</option>
+                <option value="Harsha">Harsha</option>
+                <option value="Lohith">Lohith</option>
+            </select>
+
+            <input type="submit" value="Vote">
+        </form>
+    </div>
+</body>
+</html>
