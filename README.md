@@ -67,6 +67,3 @@ Flask-SocketIO,
 Flask-Login, 
 SQLAlchemy, 
 Python-dotenv.
-
-License
-This project is licensed under the MIT License.
