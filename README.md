@@ -39,24 +39,6 @@ This system enables administrators to register voters and create elections. Once
 
 ---
 
-## 📂 Project Structure
-
-.
-├── index.php # Entry point and routing
-├── admin/ # Admin module (registration, election setup, results)
-├── voter/ # Voter module (login, voting interface)
-├── includes/ # Shared header/footer and utility functions
-├── css/ # Stylesheets for UI
-├── js/ # Optional client-side scripting
-├── db_schema.sql # SQL schema (tables for users, elections, votes)
-└── README.md # This file
-
-yaml
-Copy
-Edit
-
----
-
 ## 🛠️ Setup Instructions
 
 1. **Clone the repository**:
@@ -105,7 +87,7 @@ Database: MySQL
 
 Frontend: HTML, CSS, Bootstrap
 
-Server Stack: XAMPP / WAMP / LAMP
+Server Stack: LAMP
 
 📝 Limitations & Future Enhancements
 ✔️ Basic credential-based security
@@ -128,15 +110,3 @@ UI/UX improvements
 
 📁 Screenshots
 (Add screenshots of admin UI, voting page, results dashboard in docs/)
-
-🛠️ Suggestions for Extension
-Email notifications for registered voters
-
-Admin audit logs for actions and votes
-
-Graphic result reports (pie/bar charts)
-
-Multi-election support with timing and schedule
-
-Role-based access controls (e.g. super-admin)
-
