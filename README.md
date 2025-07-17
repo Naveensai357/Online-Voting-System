@@ -6,7 +6,7 @@ A web-based **Online Voting System** that allows authorized users to cast votes 
 
 ## 🔍 Project Overview
 
-This system enables administrators to register voters and create elections. Once registered, voters receive unique credentials to securely log in and participate in voting. Votes are recorded in a MySQL database to ensure integrity and authenticity :contentReference[oaicite:1]{index=1}.
+This system enables administrators to register voters and create elections. Once registered, voters receive unique credentials to securely log in and participate in voting. Votes are recorded in a MySQL database to ensure integrity and authenticity.
 
 ---
 
