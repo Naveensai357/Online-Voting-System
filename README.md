@@ -62,11 +62,11 @@ The root / route displays the voting form.
 
 
 Technologies Used:
-Flask
-Flask-SocketIO
-Flask-Login
-SQLAlchemy
-Python-dotenv
+Flask, 
+Flask-SocketIO, 
+Flask-Login, 
+SQLAlchemy, 
+Python-dotenv.
 
 License
 This project is licensed under the MIT License.
