@@ -1,4 +1,3 @@
-# Online Voting System
 # 🗳️ Online Voting System
 
 A web-based **Online Voting System** that allows authorized users to cast votes digitally—eliminating physical polling stations. Built using PHP/MySQL with role-based access and simple security features.
@@ -7,7 +6,7 @@ A web-based **Online Voting System** that allows authorized users to cast votes 
 
 ## 🔍 Project Overview
 
-This system enables administrators to register voters and create elections. Once registered, voters receive unique credentials to securely log in and participate in voting. Votes are recorded in a MySQL database to ensure integrity and authenticity :contentReference[oaicite:0]{index=0}.
+This system enables administrators to register voters and create elections. Once registered, voters receive unique credentials to securely log in and participate in voting. Votes are recorded in a MySQL database to ensure integrity and authenticity :contentReference[oaicite:1]{index=1}.
 
 ---
 
@@ -42,28 +41,102 @@ This system enables administrators to register voters and create elections. Once
 
 ## 📂 Project Structure
 
+.
+├── index.php # Entry point and routing
+├── admin/ # Admin module (registration, election setup, results)
+├── voter/ # Voter module (login, voting interface)
+├── includes/ # Shared header/footer and utility functions
+├── css/ # Stylesheets for UI
+├── js/ # Optional client-side scripting
+├── db_schema.sql # SQL schema (tables for users, elections, votes)
+└── README.md # This file
 
-Clone the repository:
-git clone https://github.com/yourusername/Election1.git
-cd Election1-main
-Install dependencies:
-pip install -r requirements.txt
-Set up environment variables:
-Create a .env.local file in the root directory.
-Add the following (replace with your own secret key if desired):
-SECRET_KEY=your_secret_key_here
-Run the application:
-python main.py
-The app will be available at http://localhost:8000
-Usage
-Visit /admin for the admin interface.
-Visit /client for the client (voter) interface.
-The root / route displays the voting form.
+yaml
+Copy
+Edit
 
+---
 
-Technologies Used:
-Flask, 
-Flask-SocketIO, 
-Flask-Login, 
-SQLAlchemy, 
-Python-dotenv.
+## 🛠️ Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Naveensai357/Online-Voting-System.git
+   cd Online-Voting-System
+Configure environment:
+
+Install XAMPP/LAMP/WAMP stack
+
+Start Apache and MySQL
+
+Import the database:
+
+Open phpMyAdmin or CLI
+
+Create database (e.g., votesystem)
+
+Import db_schema.sql to set up tables
+
+Update DB credentials:
+
+Open config file (e.g., includes/db_connect.php)
+
+Modify DB user/password as needed
+
+Launch the app:
+
+Access http://localhost/Online-Voting-System/
+
+Use Admin panel to register voters and manage elections
+
+👥 User Credentials
+Admin
+
+Default credentials to be defined during setup (e.g. in code/config)
+
+Voter
+
+Created by Admin during registration
+
+⚙️ Technologies Used
+Backend: PHP 7+
+
+Database: MySQL
+
+Frontend: HTML, CSS, Bootstrap
+
+Server Stack: XAMPP / WAMP / LAMP
+
+📝 Limitations & Future Enhancements
+✔️ Basic credential-based security
+
+🔴 No email verification or password hashing—must be improved for production
+
+🔴 Lacks audit/logging for votes cast
+
+🔄 Possible upgrades:
+
+Password hashing (bcrypt/Argon2)
+
+Token/email-based voter authentication
+
+Audit logs and vote integrity checks
+
+Captcha/anti-bot mechanisms
+
+UI/UX improvements
+
+📁 Screenshots
+(Add screenshots of admin UI, voting page, results dashboard in docs/)
+
+🛠️ Suggestions for Extension
+Email notifications for registered voters
+
+Admin audit logs for actions and votes
+
+Graphic result reports (pie/bar charts)
+
+Multi-election support with timing and schedule
+
+Role-based access controls (e.g. super-admin)
+
